@@ -1,0 +1,22 @@
+/**
+ * @license
+ *
+ * Font Family: General Sans
+ * Designed by: Frode Helland
+ * URL: https://www.fontshare.com/fonts/general-sans
+ * © 2022 Indian Type Foundry
+ *
+ * Font Styles:
+ * General Sans Medium
+ *
+*/
+
+@font-face {
+  font-family: 'GeneralSans-Medium';
+  src: url('@assets/fonts/GeneralSans/GeneralSans-Medium.woff2') format('woff2'),
+       url('@assets/fonts/GeneralSans/GeneralSans-Medium.woff') format('woff'),
+       url('@assets/fonts/GeneralSans/GeneralSans-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
