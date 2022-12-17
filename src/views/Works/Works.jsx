@@ -17,6 +17,10 @@ import {
   Image_Work_14,
   Image_Work_15,
   Image_Work_16,
+  Image_Work_17,
+  Image_Work_18,
+  Image_Work_19,
+  Image_Work_20,
 } from '@utils/images'
 
 const works = [
@@ -43,22 +47,22 @@ const works = [
   {
     name: '05',
     src: Image_Work_05,
-    date: '2021',
+    date: '2022',
   },
   {
     name: '06',
     src: Image_Work_06,
-    date: '2021',
+    date: '2022',
   },
   {
     name: '07',
     src: Image_Work_07,
-    date: '2021',
+    date: '2022',
   },
   {
     name: '08',
     src: Image_Work_08,
-    date: '2021',
+    date: '2022',
   },
   {
     name: '09',
@@ -98,6 +102,26 @@ const works = [
   {
     name: '16',
     src: Image_Work_16,
+    date: '2021',
+  },
+  {
+    name: '17',
+    src: Image_Work_17,
+    date: '2021',
+  },
+  {
+    name: '18',
+    src: Image_Work_18,
+    date: '2021',
+  },
+  {
+    name: '19',
+    src: Image_Work_19,
+    date: '2021',
+  },
+  {
+    name: '20',
+    src: Image_Work_20,
     date: '2021',
   },
 ]

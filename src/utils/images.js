@@ -15,6 +15,10 @@ import Image_Work_13 from '@assets/images/projects/stacja_robocza_13.png'
 import Image_Work_14 from '@assets/images/projects/stacja_robocza_14.png'
 import Image_Work_15 from '@assets/images/projects/stacja_robocza_15.png'
 import Image_Work_16 from '@assets/images/projects/stacja_robocza_16.png'
+import Image_Work_17 from '@assets/images/projects/stacja_robocza_17.png'
+import Image_Work_18 from '@assets/images/projects/stacja_robocza_18.png'
+import Image_Work_19 from '@assets/images/projects/stacja_robocza_19.png'
+import Image_Work_20 from '@assets/images/projects/stacja_robocza_20.png'
 
 export {
   Profile,
@@ -34,4 +38,8 @@ export {
   Image_Work_14,
   Image_Work_15,
   Image_Work_16,
+  Image_Work_17,
+  Image_Work_18,
+  Image_Work_19,
+  Image_Work_20,
 }
