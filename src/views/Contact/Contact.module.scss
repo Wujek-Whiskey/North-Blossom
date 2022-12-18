@@ -1,7 +1,7 @@
 @import '@styles/index.scss';
 
 .content {
-  margin: 18rem 2rem 0;
+  margin: 18rem 1rem 0;
   animation: 0.6s ease-in-out moveToUp;
 
   @keyframes moveToUp {
@@ -15,32 +15,17 @@
     }
   }
 
-  .header {
-    font-size: 6rem;
-    line-height: calc(6rem * 1.2);
-
-    @media screen and (max-width: 576px) and (min-width: 0px) {
-      font-size: 3rem;
-      line-height: calc(3rem * 1.2);
-    }
-
-    @media screen and (max-width: 1024px) and (min-width: 577px) {
-      font-size: 4rem;
-      line-height: calc(4rem * 1.2);
-    }
-  }
-
   .line {
     width: 100%;
     height: 3px;
     background-color: map-get($colors, black);
   }
 
-  .header,
+  .footer__header,
   .social,
   .description {
     color: map-get($colors, black);
-    font-family: $general-sans-medium;
+    font-family: $satoshi-bold;
     font-weight: 400;
     letter-spacing: 0.03rem;
     text-decoration: none;
@@ -49,16 +34,50 @@
   }
 
   .footer {
+    margin: 1rem 0;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-between;
-    position: relative;
-    margin: 2rem 0;
+
+    &:last-child {
+      align-items: flex-start;
+      margin: 2rem 0;
+    }
+
+    .footer__header {
+      font-size: 6rem;
+      line-height: calc(6rem * 1);
+
+      @media screen and (max-width: 576px) and (min-width: 0px) {
+        font-size: 3rem;
+        line-height: calc(3rem * 1);
+      }
+
+      @media screen and (max-width: 1024px) and (min-width: 577px) {
+        font-size: 4rem;
+        line-height: calc(4rem * 1);
+      }
+
+      &:last-child {
+        padding: 1rem;
+        border: 0.2rem solid map-get($colors, black);
+        border-radius: 4rem;
+        font-size: 2rem;
+        line-height: calc(2rem * 1);
+
+        @media screen and (max-width: 1024px) and (min-width: 0px) {
+          font-size: 1.5rem;
+          line-height: calc(1.5rem * 1);
+          padding: .5rem;
+          border: .15rem solid map-get($colors, black);
+        }
+      }
+    }
 
     .footer__contact {
       flex-wrap: wrap;
       width: 50%;
-      
+
       .footer__contact_item {
         display: flex;
         flex-direction: column;
@@ -89,46 +108,45 @@
         justify-content: flex-start;
         align-items: center;
         cursor: pointer;
-  
+
         svg {
           height: 3rem;
           transform: translate(-50%, 0);
           transition: 0.3s ease-in-out;
-  
+
           @media screen and (max-width: 1024px) and (min-width: 0px) {
             height: 2rem;
           }
         }
-  
+
         &:hover .inner .inner__link {
           transform: translateY(-100%);
         }
-  
+
         &:hover svg {
           transform: translateX(0);
         }
-  
+
         .inner {
           display: inline-flex;
           height: calc(1.6rem * 1.5);
           overflow: hidden;
           flex-direction: column;
           line-height: calc(1.6rem * 1.5);
-          position: relative;
-  
+
           @media screen and (max-width: 1024px) and (min-width: 0px) {
             height: calc(1.2rem * 1.5);
             line-height: calc(1.2rem * 1.5);
           }
-  
+
           .inner__link {
             transform: translateY(0);
             transition: transform 0.6s;
-  
+
             .social__link {
               font-size: 1.6rem;
               line-height: calc(1.6rem * 1.5);
-          
+
               @media screen and (max-width: 1024px) and (min-width: 0px) {
                 font-size: 1.2rem;
                 line-height: calc(1.2rem * 1.5);

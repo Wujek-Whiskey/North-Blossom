@@ -4,10 +4,16 @@
  * Font Family: General Sans
  * Designed by: Frode Helland
  * URL: https://www.fontshare.com/fonts/general-sans
+ *
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ *
  * © 2022 Indian Type Foundry
  *
  * Font Styles:
  * General Sans Medium
+ * Satoshi Bold
  *
 */
 
@@ -16,6 +22,16 @@
   src: url('@assets/fonts/GeneralSans/GeneralSans-Medium.woff2') format('woff2'),
        url('@assets/fonts/GeneralSans/GeneralSans-Medium.woff') format('woff'),
        url('@assets/fonts/GeneralSans/GeneralSans-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('@assets/fonts/Satoshi/Satoshi-Bold.woff2') format('woff2'),
+       url('@assets/fonts/Satoshi/Satoshi-Bold.woff') format('woff'),
+       url('@assets/fonts/Satoshi/Satoshi-Bold.ttf') format('truetype');
        font-weight: 500;
        font-display: swap;
        font-style: normal;

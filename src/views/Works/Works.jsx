@@ -144,11 +144,13 @@ const Works = () => {
   ))
 
   return (
-    <header className={styles.wrapper}>
-      <h1 className={styles.wrapper__header}>realizacje</h1>
-      <div className={styles.wrapper__line} />
-      <div className={styles.wrapper__content}>{worksList}</div>
-    </header>
+    <>
+      <header className={styles.wrapper}>
+        <h1 className={styles.wrapper__header}>realizacje</h1>
+        <div className={styles.wrapper__line} />
+        <div className={styles.wrapper__content}>{worksList}</div>
+      </header>
+    </>
   )
 }
 

@@ -3,9 +3,8 @@
 .content {
   margin: 0 1rem;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  animation: .6s ease-in-out moveToUp;
+  justify-content: space-between;
+  animation: 0.6s ease-in-out moveToUp;
 
   @keyframes moveToUp {
     from {
@@ -22,69 +21,127 @@
     display: block;
   }
 
-  .header,
-  .description {
-    max-width: 560px;
-    color: map-get($colors, black);
-    font-family: $general-sans-medium;
-    font-weight: 400;
-    letter-spacing: 0.03rem;
-    text-decoration: none;
-    cursor: auto;
+  .wrapper {
+    margin: 0;
+    &:last-child {
+      width: 45vw;
+      height: 80vh;
 
-    @media screen and (max-width: 576px) and (min-width: 0px) {
-      max-width: 340px;
-    }
-  }
+      @media screen and (max-width: 576px) and (min-width: 0px) {
+        width: 92vw;
+        margin: 2rem 0;
+      }
 
-  .header {
-    margin: 0 -18rem;
-    font-size: 6rem;
-    line-height: calc(6rem * 1.2);
-    text-transform: capitalize;
-
-    @media screen and (max-width: 576px) and (min-width: 0px) {
-      margin: 4rem 0;
-      font-size: 3rem;
-      line-height: calc(3rem * 1.5);
+      @media screen and (max-width: 1024px) and (min-width: 577px) {
+        width: 96vw;
+        margin: 2rem 0;
+      }
     }
 
-    @media screen and (max-width: 1024px) and (min-width: 577px) {
-      margin: 4rem 0;
-      font-size: 4rem;
-      line-height: calc(4rem * 1.5);
+    .header,
+    .description,
+    .text {
+      color: map-get($colors, white);
+      font-family: $satoshi-bold;
+      font-weight: 400;
+      letter-spacing: $letter-spacing;
+      text-decoration: none;
+      cursor: auto;
+
+      @media screen and (max-width: 576px) and (min-width: 0px) {
+        max-width: 340px;
+      }
     }
 
-    @media screen and (max-width: 1366px) and (min-width: 1025px) {
-      margin: 0 -2rem;
+    .header {
+      margin: 26rem 0 0;
+      font-size: 6rem;
+      line-height: calc(6rem * 1.2);
+      text-transform: capitalize;
+      color: map-get($colors, black);
+      background-color: map-get($colors, blue);
+
+      @media screen and (max-width: 576px) and (min-width: 0px) {
+        margin: 8rem 0 0;
+        font-size: 3rem;
+        line-height: calc(3rem * 1.5);
+      }
+
+      @media screen and (max-width: 1024px) and (min-width: 577px) {
+        margin: 12rem 0 0;
+        font-size: 4rem;
+        line-height: calc(4rem * 1.5);
+      }
+
+      @media screen and (max-width: 1366px) and (min-width: 1025px) {
+        margin: 13rem 0 0;
+        font-size: 4rem;
+        line-height: calc(4rem * 1.5);
+      }
+
+      @media screen and (max-width: 1601px) and (min-width: 1367px) {
+        margin: 18rem 0 0;
+        font-size: 5rem;
+        line-height: calc(5rem * 1.5);
+      }
     }
 
-    @media screen and (max-width: 1600px) and (min-width: 1367px) {
-      margin: 0 -8rem;
-    }
-  }
-
-  .description {
-    margin: 24rem 0 0;
-    font-size: 1.6rem;
-    line-height: calc(1.6rem * 1.5);
-    text-align: justify;
-
-    @media screen and (max-width: 576px) and (min-width: 0px) {
-      margin: 0;
-      text-align: left;
+    .text {
+      margin: 2rem 0;
+      display: inline-block;
+      max-width: 677px;
+      color: map-get($colors, black);
+      font-size: 1.6rem;
+      line-height: calc(1.6rem * 1.5);
+      text-align: justify;
     }
 
-    @media screen and (max-width: 1024px) and (min-width: 577px) {
-      margin: 0;
-    }
+    .footer__text {
+      padding: 41.5rem 1rem 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
 
-    @media screen and (max-width: 1366px) and (min-width: 1025px) {
-      margin: 16rem 0 0;
-    }
+      @media screen and (max-width: 576px) and (min-width: 0px) {
+        padding: 36rem 1rem 0;
+      }
 
-    @media screen and (max-width: 1600px) and (min-width: 1367px) {
-      margin: 20rem 0 0;
+      @media screen and (max-width: 1024px) and (min-width: 577px) {
+        padding: 50rem 1rem 0;
+      }
+
+      @media screen and (max-width: 1366px) and (min-width: 1025px) {
+        padding: 25rem 1rem 0;
+      }
+
+      @media screen and (max-width: 1601px) and (min-width: 1367px) {
+        padding: 32rem 1rem 0;
+      }
+
+      .description {
+        font-size: 1.6rem;
+        line-height: calc(1.6rem * 1.5);
+        text-align: justify;
+
+        &:last-child {
+          color: map-get($colors, black);
+        }
+      }
+
+      .btn {
+        width: 64px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: map-get($colors, white);
+        border-radius: 100%;
+
+        @media screen and (max-width: 1024px) and (min-width: 0px) {
+          width: 56px;
+          height: 56px;
+        }
+      }
     }
   }
 }

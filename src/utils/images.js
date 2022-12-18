@@ -1,4 +1,5 @@
 import Profile from '@assets/images/me.jpg'
+import Brand from '@assets/images/brand/NorthBlossom.png'
 import Image_Work_01 from '@assets/images/projects/stacja_robocza_1.png'
 import Image_Work_02 from '@assets/images/projects/stacja_robocza_2.png'
 import Image_Work_03 from '@assets/images/projects/stacja_robocza_3.png'
@@ -22,6 +23,7 @@ import Image_Work_20 from '@assets/images/projects/stacja_robocza_20.png'
 
 export {
   Profile,
+  Brand,
   Image_Work_01,
   Image_Work_02,
   Image_Work_03,

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { Brand } from '@utils/images/'
 import styles from './Navbar.module.scss'
 
 const Navbar = () => {
@@ -22,13 +23,16 @@ const Navbar = () => {
   const style = {
     transform: 'rotate(180deg)',
     transition: 'transform 0.8s',
+    color: '#EEF0F2',
   }
+
+  const styleColor = { color: '#EEF0F2' }
 
   return (
     <nav className={styles.nav}>
       <div className={styles.nav__container}>
         <span onClick={() => navigate('/')} className={styles.nav__brand}>
-          klw.<sup>&copy;</sup>
+          <img src={Brand} alt={''} />
         </span>
         <div
           className={styles.nav__inner}
@@ -39,11 +43,7 @@ const Navbar = () => {
           onMouseLeave={() => setMenuVisibility(false)}
         >
           <svg
-            style={
-              menuVisibility
-                ? { transform: 'rotate(180deg)', transition: 'transform 0.6s' }
-                : null
-            }
+            style={menuVisibility ? style : null}
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -59,10 +59,20 @@ const Navbar = () => {
           </svg>
           <div className={styles.inner}>
             <span className={styles.inner__link}>
-              <span className={styles.nav__link}>menu</span>
+              <span
+                style={menuVisibility ? styleColor : null}
+                className={styles.nav__link}
+              >
+                menu
+              </span>
             </span>
             <span className={styles.inner__link} aria-hidden="true">
-              <span className={styles.nav__link}>menu</span>
+              <span
+                style={menuVisibility ? styleColor : null}
+                className={styles.nav__link}
+              >
+                menu
+              </span>
             </span>
           </div>
           <div
@@ -73,6 +83,7 @@ const Navbar = () => {
                 : null
             }
           >
+            <span className={styles.nav__header}>North Blossom</span>
             <ul className={styles.nav__list}>
               <li className={styles.list__item}>
                 <Link to={'/'} className={styles.list__link}>

@@ -1,7 +1,7 @@
 @import '@styles/index.scss';
 
 .wrapper {
-  margin: 0 2rem;
+  margin: 0 1rem;
   animation: 0.6s ease-in-out moveToUp;
 
   @keyframes moveToUp {
@@ -20,9 +20,9 @@
     font-size: 6rem;
     line-height: calc(6rem * 1.5);
     color: map-get($colors, black);
-    font-family: $general-sans-medium;
+    font-family: $satoshi-bold;
     font-weight: 400;
-    letter-spacing: 0.03rem;
+    letter-spacing: $letter-spacing;
     text-decoration: none;
     text-transform: uppercase;
     cursor: auto;
@@ -76,9 +76,9 @@
           font-size: 1.4rem;
           line-height: calc(1.4rem * 1.5);
           color: map-get($colors, black);
-          font-family: $general-sans-medium;
+          font-family: $satoshi-bold;
           font-weight: 400;
-          letter-spacing: 0.03rem;
+          letter-spacing: $letter-spacing;
           text-decoration: none;
           cursor: auto;
         }

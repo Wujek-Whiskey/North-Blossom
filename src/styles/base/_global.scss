@@ -9,8 +9,8 @@ html, body {
 }
 
 ::selection {
-  color: map-get($colors, orange);
-  background-color: map-get($colors, black);
+  color: map-get($colors, black);
+  background-color: map-get($colors, blue);
 }
 
 ::-webkit-scrollbar {
