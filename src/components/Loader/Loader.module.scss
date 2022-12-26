@@ -1,0 +1,46 @@
+@import '@styles/index.scss';
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: map-get($colors, gray);
+  animation: moveTop 2s linear;
+
+  @keyframes moveTop {
+    0% {
+      transform: translateY(0);
+    } 25% {
+      transform: translateY(0);
+    } 100% {
+      transform: translateY(-100%);
+    }
+  }
+
+  .hero__header {
+    font-size: 5rem;
+    font-family: $satoshi-bold;
+    color: map-get($colors, white);
+    line-height: calc(5rem * 1.5);
+    letter-spacing: $letter-spacing;
+
+    @media screen and (max-width: 1024px) and (min-width: 0px) {
+      font-size: 2.4rem;
+      line-height: calc(2.4rem * 1.5);
+    }
+  
+    sup {
+      font-size: 2rem;
+      line-height: calc(2rem * 1.5);
+      vertical-align: super;
+      letter-spacing: 0;
+
+      @media screen and (max-width: 1024px) and (min-width: 0px) {
+        font-size: 1.2rem;
+        line-height: calc(1.2rem * 1.5);
+      }
+    }
+  }
+}
